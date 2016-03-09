@@ -1,0 +1,6 @@
+framework module InfluxAPM {
+    umbrella header "InfluxAPM.h"
+    
+    export *
+    module * { export * }
+}
