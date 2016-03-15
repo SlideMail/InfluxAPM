@@ -2,7 +2,7 @@
 //  InfluxAPM
 //
 //  Created by Marcin Butanowicz on 16/02/16.
-//  Copyright © 2016 com.InfluxAPM. All rights reserved.
+//  Copyright © 2016 InfluxAPM. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -75,6 +75,14 @@
  @param exception User exception.
  */
 + (void)trackException:(NSException *)exception;
+
+
+/**
+ Add custom network hostname to monitor reachability.
+ @param hostname custom hostname.
+ */
++ (void)addNetworkHostname:(NSString *)hostname;
+
 @end
 
 
